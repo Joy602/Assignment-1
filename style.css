@@ -5,13 +5,13 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Global Container Wrapper */
+/* Global Container */
 .container-wrapper {
   max-width: 1360px;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 20px; /* ডানে-বামে সামান্য সেফটি স্পেস */
+  padding-right: 20px;
   padding-left: 20px;
 }
 
@@ -124,10 +124,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    rgba(0, 0, 0, 0.6),
-    rgba(0, 0, 0, 0.8)
-  ); /* Darkening gradient */
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
   z-index: 1;
 }
 
@@ -138,7 +135,6 @@ body {
   width: 100%;
 }
 
-/* --- Typography --- */
 .hero-title {
   font-size: 3.5rem;
   font-weight: 700;
@@ -160,7 +156,7 @@ body {
   padding: 0 40px;
 }
 
-/* --- Hero Button Styling --- */
+/* --- Hero Button --- */
 .btn-hero-register {
   display: inline-block;
   background-color: #2563eb;
@@ -182,10 +178,10 @@ body {
 
 /* --- Speakers Section --- */
 .speakers-section {
-  background-color: #ffffff; /* Clean white background */
+  background-color: #ffffff;
   padding: 60px 40px;
   /* max-width: 1200px; */
-  margin: 0 auto; /* Centering the section on large screens */
+  margin: 0 auto;
 }
 
 .speakers-main-title {
@@ -210,7 +206,6 @@ body {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
 }
 
-/* Image Container with fixed aspect ratio */
 .speaker-img-container {
   width: 100%;
   height: 250px;
@@ -228,12 +223,10 @@ body {
   display: block;
 }
 
-/* Info Box padding */
 .speaker-info {
   padding: 20px;
 }
 
-/* Tags/Category Styles */
 .speaker-tag {
   font-size: 11px;
   font-weight: 700;
@@ -254,21 +247,13 @@ body {
 
 .speaker-role {
   font-size: 0.9rem;
-  color: #6b7280; /* Muted gray description text */
+  color: #6b7280;
   font-weight: 400;
 }
 
-/* --- Responsive Adjustments --- */
-@media (max-width: 768px) {
-  .speakers-grid {
-    grid-template-columns: 1fr; /* Switch to 1 column on tablets and mobile */
-  }
-}
-
 /* Pricing section CSS */
-/* --- Pricing Section Styling --- */
 .pricing-section {
-  background-color: #ffffff; /* Clean white background */
+  background-color: #ffffff;
   padding: 80px 0;
 }
 
@@ -293,12 +278,12 @@ body {
 /* --- Pricing Cards 3-Column Grid --- */
 .pricing-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 Equal columns */
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
-  align-items: stretch; /* Ensures all cards have equal height */
+  align-items: stretch;
 }
 
-/* --- Base Pricing Card Styles --- */
+/* --- Base Pricing Card  --- */
 .price-card {
   background-color: #ffffff;
   border: 1px solid #e2e8f0;
@@ -332,18 +317,18 @@ body {
   color: #64748b;
 }
 
-/* Divider styling */
+/* Divider */
 .card-divider {
   border: 0;
   border-top: 1px solid #f1f5f9;
   margin-bottom: 24px;
 }
 
-/* Feature List Styling */
+/* Feature List */
 .plan-features {
   list-style: none;
   margin-bottom: 40px;
-  flex-grow: 1; /* Pushes the button to the bottom if list is short */
+  flex-grow: 1;
 }
 
 .plan-features li {
@@ -354,7 +339,6 @@ body {
   padding-left: 20px;
 }
 
-/* Blue dot before each feature list item */
 .plan-features li::before {
   content: "•";
   color: #2563eb;
@@ -365,12 +349,10 @@ body {
   font-size: 1.2rem;
 }
 
-/* --- Buttons Layout --- */
 .card-action {
   width: 100%;
 }
 
-/* Standard Button Style (Outline) */
 .btn-outline {
   display: block;
   text-align: center;
@@ -389,7 +371,6 @@ body {
   color: #ffffff;
 }
 
-/* Team Button Style (Dark Border/Text) */
 .btn-contact {
   display: block;
   text-align: center;
@@ -408,9 +389,8 @@ body {
   color: #ffffff;
 }
 
-/* --- Highlighted PRO Card Custom Style --- */
 .plan-pro {
-  background-color: #0b1329; /* Dark midnight navy/black tone from image */
+  background-color: #0b1329;
   border: none;
   box-shadow: 0 10px 25px -5px rgba(11, 19, 41, 0.3);
 }
@@ -432,7 +412,6 @@ body {
   color: #cbd5e1;
 }
 
-/* PRO Solid Blue Button Style */
 .btn-solid {
   display: block;
   text-align: center;
@@ -450,60 +429,40 @@ body {
   background-color: #1d4ed8;
 }
 
-/* --- Responsive Layout for Mobile --- */
-@media (max-width: 968px) {
-  .pricing-grid {
-    grid-template-columns: 1fr; /* Stacks vertically on smaller screens */
-    gap: 30px;
-  }
-}
-
 /* Footer CSS */
-/* --- Footer Section Styling --- */
 .site-footer {
-  background-color: #0b1329; /* Matches the dark midnight navy color from the image */
+  background-color: #0b1329;
   padding: 30px 0;
   width: 100%;
 }
 
-/* Flexbox setup to push content to opposite sides */
 .footer-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* Left side text styling */
+/* Left */
 .footer-left p {
-  color: #64748b; /* Muted gray text color */
+  color: #64748b;
   font-size: 0.9rem;
   font-weight: 400;
 }
 
-/* Right side navigation links styling */
+/* Right */
 .footer-right {
   display: flex;
-  gap: 24px; /* Space between Privacy Policy and Terms of Service */
+  gap: 24px;
 }
 
 .footer-right a {
-  color: #64748b; /* Matching muted gray text color */
+  color: #64748b;
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 400;
   transition: color 0.3s ease;
 }
 
-/* Subtle hover effect for the links */
 .footer-right a:hover {
-  color: #cbd5e1; /* Lights up a bit on hover */
-}
-
-/* --- Responsive Layout for Mobile --- */
-@media (max-width: 600px) {
-  .footer-container {
-    flex-direction: column; /* Stacks vertically on tiny screens */
-    gap: 15px;
-    text-align: center;
-  }
+  color: #cbd5e1;
 }
