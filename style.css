@@ -457,3 +457,53 @@ body {
     gap: 30px;
   }
 }
+
+/* Footer CSS */
+/* --- Footer Section Styling --- */
+.site-footer {
+  background-color: #0b1329; /* Matches the dark midnight navy color from the image */
+  padding: 30px 0;
+  width: 100%;
+}
+
+/* Flexbox setup to push content to opposite sides */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Left side text styling */
+.footer-left p {
+  color: #64748b; /* Muted gray text color */
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+/* Right side navigation links styling */
+.footer-right {
+  display: flex;
+  gap: 24px; /* Space between Privacy Policy and Terms of Service */
+}
+
+.footer-right a {
+  color: #64748b; /* Matching muted gray text color */
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+/* Subtle hover effect for the links */
+.footer-right a:hover {
+  color: #cbd5e1; /* Lights up a bit on hover */
+}
+
+/* --- Responsive Layout for Mobile --- */
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column; /* Stacks vertically on tiny screens */
+    gap: 15px;
+    text-align: center;
+  }
+}
