@@ -10,27 +10,37 @@
   <body>
     <!-- Main Navbar Container -->
     <nav class="navbar">
-      <!-- Left Side -->
-      <div class="nav-logo">
-        <div class="logo-icon">&lt;/&gt;</div>
-        <div class="logo-text">
-          <strong>DEVCONF</strong>
-          <span>2026</span>
+      <div
+        class="container-wrapper"
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+        "
+      >
+        <!-- Left Side -->
+        <div class="nav-logo">
+          <div class="logo-icon">&lt;/&gt;</div>
+          <div class="logo-text">
+            <strong>DEVCONF</strong>
+            <span>2026</span>
+          </div>
         </div>
-      </div>
 
-      <!-- Center -->
-      <ul class="nav-links">
-        <li><a href="#">Speakers</a></li>
-        <li><a href="#">Schedule</a></li>
-        <li><a href="#">Tracks</a></li>
-        <li><a href="#">Venue</a></li>
-        <li><a href="#">Blog</a></li>
-      </ul>
+        <!-- Center -->
+        <ul class="nav-links">
+          <li><a href="#">Speakers</a></li>
+          <li><a href="#">Schedule</a></li>
+          <li><a href="#">Tracks</a></li>
+          <li><a href="#">Venue</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
 
-      <!-- Right Side -->
-      <div class="nav-button">
-        <a href="#" class="btn-register">Register Now</a>
+        <!-- Right Side -->
+        <div class="nav-button">
+          <a href="#" class="btn-register">Register Now</a>
+        </div>
       </div>
     </nav>
 
@@ -39,7 +49,7 @@
       <div class="hero-overlay"></div>
 
       <!-- Hero Content Area -->
-      <div class="hero-content">
+      <div class="container-wrapper hero-content">
         <!-- Main Heading -->
         <h1 class="hero-title">
           Code. <span class="italic-text">Connect.</span> Create
@@ -53,6 +63,81 @@
 
         <div class="hero-cta">
           <a href="#" class="btn-hero-register">Register Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Speakers Section -->
+    <section class="speakers-section">
+      <!-- 💡 ফিক্সড: পুরো কন্টেন্টকে ১৩৬০ পিক্সেলের ভেতরে রাখার জন্য এখানে container-wrapper যোগ করা হলো -->
+      <div class="container-wrapper">
+        <h2 class="speakers-main-title">Meet the Speakers</h2>
+
+        <!-- Grid Container for Speaker Cards -->
+        <div class="speakers-grid">
+          <!-- Card 1: Andrej Karpathy -->
+          <div class="speaker-card card-1">
+            <div class="speaker-img-container">
+              <img
+                src="./img/speaker1.jpg"
+                alt="Andrej Karpathy"
+                class="speaker-img"
+              />
+            </div>
+            <div class="speaker-info">
+              <span class="speaker-tag tag-ai">AI / ML</span>
+              <h3 class="speaker-name">Andrej Karpathy</h3>
+              <p class="speaker-role">Pretraining team, Anthropic</p>
+            </div>
+          </div>
+
+          <!-- Card 2: Demis Hassabis -->
+          <div class="speaker-card">
+            <div class="speaker-img-container">
+              <img
+                src="./img/speaker2.jpg"
+                alt="Demis Hassabis"
+                class="speaker-img"
+              />
+            </div>
+            <div class="speaker-info">
+              <span class="speaker-tag tag-cloud">CLOUD & DEVOPS</span>
+              <h3 class="speaker-name">Demis Hassabis</h3>
+              <p class="speaker-role">Co-Founder and CEO, Google DeepMind</p>
+            </div>
+          </div>
+
+          <!-- Card 3: Gary Marcus -->
+          <div class="speaker-card">
+            <div class="speaker-img-container">
+              <img
+                src="./img/speaker3.jpg"
+                alt="Gary Marcus"
+                class="speaker-img"
+              />
+            </div>
+            <div class="speaker-info">
+              <span class="speaker-tag tag-frontend">FRONTEND</span>
+              <h3 class="speaker-name">Gary Marcus</h3>
+              <p class="speaker-role">Staff Engineer, Vercel</p>
+            </div>
+          </div>
+
+          <!-- Card 4: Mustafa Suleyman -->
+          <div class="speaker-card">
+            <div class="speaker-img-container">
+              <img
+                src="./img/speaker4.jpg"
+                alt="Mustafa Suleyman"
+                class="speaker-img"
+              />
+            </div>
+            <div class="speaker-info">
+              <span class="speaker-tag tag-security">SECURITY</span>
+              <h3 class="speaker-name">Mustafa Suleyman</h3>
+              <p class="speaker-role">CEO of Microsoft AI</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

@@ -5,6 +5,16 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Global Container Wrapper */
+.container-wrapper {
+  max-width: 1360px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px; /* ডানে-বামে সামান্য সেফটি স্পেস */
+  padding-left: 20px;
+}
+
 body {
   background-color: #1a1a1a;
 }
@@ -168,4 +178,89 @@ body {
 .btn-hero-register:hover {
   background-color: #1d4ed8;
   transform: translateY(-2px);
+}
+
+/* --- Speakers Section --- */
+.speakers-section {
+  background-color: #ffffff; /* Clean white background */
+  padding: 60px 40px;
+  /* max-width: 1200px; */
+  margin: 0 auto; /* Centering the section on large screens */
+}
+
+.speakers-main-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 40px;
+}
+
+.speakers-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.speaker-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+/* Image Container with fixed aspect ratio */
+.speaker-img-container {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  background-color: #f3f4f6;
+}
+
+.speakers-grid .card-1 img {
+  object-position: 0% 5%;
+}
+.speaker-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Info Box padding */
+.speaker-info {
+  padding: 20px;
+}
+
+/* Tags/Category Styles */
+.speaker-tag {
+  font-size: 11px;
+  font-weight: 700;
+  color: #2563eb;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+/* Name and Role */
+.speaker-name {
+  font-size: 1.25rem;
+  color: #111827;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.speaker-role {
+  font-size: 0.9rem;
+  color: #6b7280; /* Muted gray description text */
+  font-weight: 400;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+  .speakers-grid {
+    grid-template-columns: 1fr; /* Switch to 1 column on tablets and mobile */
+  }
 }
